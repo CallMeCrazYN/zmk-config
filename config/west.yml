@@ -11,8 +11,8 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    - name: zmk-locales
-      remote: zmk_locales_base
-      revision: main
+      #- name: zmk-locales
+      #  remote: zmk_locales_base
+      #  revision: main
   self:
     path: config
