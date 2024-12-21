@@ -105,7 +105,7 @@
    &kp  TAB  &kp DE_K  &kp DE_DOT  &kp DE_O &kp DE_COMMA &kp DE_Y &kp DE_V &kp DE_G &kp DE_C &kp DE_L &kp DE_Z &kp BSPC
    &kp LCTRL &kp DE_H  &kp DE_A    &kp DE_E &kp DE_I     &kp DE_U &kp DE_D &kp DE_T &kp DE_R &kp DE_N &kp DE_S &kp DE_F
    &tdshift &trans &kp DE_X    &kp DE_Q &kp DE_A_UMLAUT &kp DE_U_UMLAUT &kp DE_B &kp DE_P &kp DE_W &kp DE_M &kp DE_J &kp RSHFT 
-             &kp LGUI &mo KOY_NUM  &kp DE_SPACE   &kp RET   &mo KOY_BASE_SYMBOL   &kp RALT
+             &kp LGUI &mo KOY_NUM  &kp DE_SPACE   &kp RET   &mo KOY_BASE_SYMBOL   &kp ALT
                         >;
                 };
 
@@ -121,7 +121,7 @@
    &kp TAB   &trans &kp DE_UNDERSCORE &kp DE_LEFT_BRACKET &kp DE_RIGHT_BRACKET &kp DE_CARET &kp DE_EXCLAMATION &kp DE_LT  &kp DE_GT    &kp DE_EQUAL   &kp DE_AMPERSAND &trans  
    &kp LCTRL &kp DE_BACKSLASH &kp DE_SLASH &kp DE_LEFT_BRACE &kp DE_RIGHT_BRACE &kp DE_ASTERISK &kp DE_QUESTION &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS &kp DE_MINUS &kp DE_COLON &kp DE_AT
    &tdshift &kp DE_HASH &kp DE_DOLLAR &kp DE_PIPE &kp DE_TILDE &kp DE_GRAVE &kp DE_PLUS &kp DE_PERCENT &kp DE_DOUBLE_QUOTES &kp DE_DOT &kp DE_SEMICOLON &kp ESC
-                  &kp LGUI &trans &kp DE_SPACE   &kp RET &trans &kp RALT
+                  &kp LGUI &trans &kp DE_SPACE   &kp RET &trans &kp ALT
                         >;
                 };
 
@@ -137,7 +137,7 @@
    &kp  TAB  &kp PAGE_UP  &kp BSPC  &kp UP_ARROW  &kp DELETE &kp PAGE_DOWN  &trans &kp DE_N7 &kp DE_N8 &kp DE_N9 &kp DE_PLUS &kp DE_MINUS 
    &kp LCTRL &kp HOME  &kp LEFT_ARROW &kp DOWN_ARROW &kp RIGHT_ARROW &kp END &trans &kp DE_N4 &kp DE_N5 &kp DE_N6 &kp DE_COMMA &kp DE_DOT 
    &tdshift &kp ESC &kp TAB &trans &kp RET &trans &kp DE_COLON &kp DE_N1 &kp DE_N2 &kp DE_N3 &kp DE_SEMICOLON &kp RSHFT 
-             &kp LCTRL &trans  &kp DE_SPACE   &kp RET   &trans   &kp RALT
+             &kp LCTRL &trans  &kp DE_SPACE   &kp RET   &trans   &kp ALT
                         >;
                 };
         };
