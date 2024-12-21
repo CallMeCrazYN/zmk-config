@@ -11,9 +11,11 @@
 #include "keys_de.h"
 
 #define QWERTY 0
-#define KOY_BASE 1
-#define KOY_BASE_SYMBOL 2
-#define KOY_NUM 3
+#define QWERTY_LWR 1
+#define QWERTY_RAISE 2
+#define KOY_BASE 3
+#define KOY_BASE_SYMBOL 4
+#define KOY_NUM 5
 
 
 //- brauche super key noch irgendwo
