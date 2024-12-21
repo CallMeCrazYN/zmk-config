@@ -28,7 +28,7 @@
   quick-release;
   /delete-property/ ignore-modifiers;
 
-}
+};
 
 // maybe use tapdance to handle layers
 //- one tap for nextkeypress and then go back
