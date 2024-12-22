@@ -57,12 +57,12 @@
               tapping-term-ms = <200>;
               bindings = <&sl KOY_NUM>, <&tog KOY_NUM>;
           };
-          tdkoysym: tap_dance_1 {
+          tdkoysym: tap_dance_2 {
               compatible = "zmk,behavior-tap-dance";
               #binding-cells = <0>;
               tapping-term-ms = <200>;
               bindings = <&sl KOY_BASE_SYMBOL>, <&tog KOY_BASE_SYMBOL>;
-          }
+          };
 
       };
 
