@@ -45,19 +45,19 @@
 / {
 
       behaviors {
-          tdshift: tap_dance_0 {
+          tdshift: tap_dance_shift {
               compatible = "zmk,behavior-tap-dance";
               #binding-cells = <0>;
               tapping-term-ms = <200>;
               bindings = <&sk LSHIFT>, <&kp CAPS>;
           };
-          tdkoynum: tap_dance_1 {
+          tdkoynum: tap_dance_koynum {
               compatible = "zmk,behavior-tap-dance";
               #binding-cells = <0>;
               tapping-term-ms = <200>;
               bindings = <&sl KOY_NUM>, <&tog KOY_NUM>;
           };
-          tdkoysym: tap_dance_2 {
+          tdkoysym: tap_dance_koysym {
               compatible = "zmk,behavior-tap-dance";
               #binding-cells = <0>;
               tapping-term-ms = <200>;
@@ -123,7 +123,7 @@
    &kp  TAB  &kp DE_K  &kp DE_DOT  &kp DE_O &kp DE_COMMA &kp DE_Y &kp DE_V &kp DE_G &kp DE_C &kp DE_L &kp DE_Z &kp BSPC
    &kp LCTRL &kp DE_H  &kp DE_A    &kp DE_E &kp DE_I     &kp DE_U &kp DE_D &kp DE_T &kp DE_R &kp DE_N &kp DE_S &kp DE_F
    &tdshift &trans &kp DE_X    &kp DE_Q &kp DE_A_UMLAUT &kp DE_U_UMLAUT &kp DE_B &kp DE_P &kp DE_W &kp DE_M &kp DE_J &kp RSHFT 
-             &kp LGUI &tdkoysym &kp DE_SPACE   &kp RET   &tdkoynum   &kp ALT
+             &kp LGUI &trans &kp DE_SPACE   &kp RET   &trans   &kp ALT
                         >;
                 };
 
