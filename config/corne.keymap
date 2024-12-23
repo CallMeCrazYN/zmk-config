@@ -166,6 +166,20 @@
              &kp LCTRL &trans  &kp DE_SPACE   &kp RET   &trans   &kp LALT
                         >;
                 };
-                        };
+
+                bt_ctrl_layer {
+// -----------------------------------------------------------------------------------------
+// |  TAB |  BT1 | BT2 | BT3 | BT4 | BT5 |  |  6  |  7  |  8  |  9  |  0  | BSPC |
+// | LCTRL|  |  |  |  |  |   | LFT | DWN |  UP | RGT |     |      |
+// | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
+//                    | GUI |     | SPC |   | ENT |     | ALT |
+                        bindings = <
+   &kp TAB    &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &bt BT_CLR
+   &kp LCTRL &kp DE_B &kp DE_T &kp DE_C &kp DE_T &kp DE_R   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
+   &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
+            &tog BT_CTRL_LAYER     &to KOY_BASE      &kp SPACE      &kp RET  &to KOY_BASE   &tog BT_CTRL_LAYER 
+                        >;
+                };
+        };
 };
 
