@@ -16,6 +16,7 @@
 #define KOY_BASE 3
 #define KOY_BASE_SYMBOL 4
 #define KOY_NUM 5
+#define BT_CTRL_LAYER 6
 
 
 //- brauche super key noch irgendwo -> gui 
@@ -62,6 +63,13 @@
               #binding-cells = <0>;
               tapping-term-ms = <200>;
               bindings = <&sl KOY_BASE_SYMBOL>, <&tog KOY_BASE_SYMBOL>;
+          };
+
+          tdaltbt: tap_dance_alt_bt {
+              compatible = "zmk,behavior-tap-dance";
+              #binding-cells = <0>;
+              tapping-term-ms = <200>;
+              bindings = <&sk LALT>, <&kp LALT>,<&tog BT_CTRL_LAYER>;
           };
 
       };
@@ -156,6 +164,19 @@
    &kp LCTRL &kp HOME  &kp LEFT_ARROW &kp DOWN_ARROW &kp RIGHT_ARROW &kp END &trans &kp DE_N4 &kp DE_N5 &kp DE_N6 &kp DE_COMMA &kp DE_DOT 
    &tdshift &kp ESC &kp TAB &trans &kp RET &trans &kp DE_COLON &kp DE_N1 &kp DE_N2 &kp DE_N3 &kp DE_SEMICOLON &kp RSHFT 
              &kp LCTRL &trans  &kp DE_SPACE   &kp RET   &trans   &kp LALT
+                        >;
+                };
+                bt_ctrl_layer {
+// -----------------------------------------------------------------------------------------
+// |  TAB |  BT1 | BT2 | BT3 | BT4 | BT5 |  |  6  |  7  |  8  |  9  |  0  | BSPC |
+// | LCTRL|  |  |  |  |  |   | LFT | DWN |  UP | RGT |     |      |
+// | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
+//                    | GUI |     | SPC |   | ENT |     | ALT |
+                        bindings = <
+   &kp TAB    &bt BT_SEL 0  &bt BT_SEL 1   &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BT_CLR
+   &kp LCTRL &kp DE_B &kp DE_T &kp DE_C &kp DE_T &kp DE_R   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
+   &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
+                                    &tog BT_CTRL_LAYER     &to KOY_BASE      &kp SPACE      &kp RET  &to KOY_BASE   &tog BT_CTRL_LAYER 
                         >;
                 };
         };
