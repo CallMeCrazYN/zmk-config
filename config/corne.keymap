@@ -131,7 +131,7 @@
    &kp  TAB  &kp DE_K  &kp DE_DOT  &kp DE_O &kp DE_COMMA &kp DE_Y &kp DE_V &kp DE_G &kp DE_C &kp DE_L &kp DE_Z &kp BSPC
    &kp LCTRL &kp DE_H  &kp DE_A    &kp DE_E &kp DE_I     &kp DE_U &kp DE_D &kp DE_T &kp DE_R &kp DE_N &kp DE_S &kp DE_F
    &tdshift &trans &kp DE_X    &kp DE_Q &kp DE_A_UMLAUT &kp DE_U_UMLAUT &kp DE_B &kp DE_P &kp DE_W &kp DE_M &kp DE_J &kp RSHFT 
-             &kp LGUI &tdkoynum &kp DE_SPACE   &kp RET   &tdkoysym   &tdaltbt 
+             &kp LGUI &tdkoysym &kp DE_SPACE   &kp RET   &tdkoynum   &tdaltbt 
                         >;
                 };
 
@@ -163,7 +163,7 @@
    &kp  TAB  &kp PAGE_UP  &kp BSPC  &kp UP_ARROW  &kp DELETE &kp PAGE_DOWN  &trans &kp DE_N7 &kp DE_N8 &kp DE_N9 &kp DE_PLUS &kp DE_MINUS 
    &kp LCTRL &kp HOME  &kp LEFT_ARROW &kp DOWN_ARROW &kp RIGHT_ARROW &kp END &trans &kp DE_N4 &kp DE_N5 &kp DE_N6 &kp DE_COMMA &kp DE_DOT 
    &tdshift &kp ESC &kp TAB &trans &kp RET &trans &kp DE_COLON &kp DE_N1 &kp DE_N2 &kp DE_N3 &kp DE_SEMICOLON &kp RSHFT 
-             &kp LCTRL &trans  &kp DE_SPACE   &kp RET   &trans   &trans
+             &kp LCTRL &trans  &kp DE_N0  &kp RET   &trans   &trans
                         >;
                 };
 
