@@ -130,7 +130,7 @@
                         bindings = <
    &kp  TAB  &kp DE_K  &kp DE_DOT  &kp DE_O &kp DE_COMMA &kp DE_Y &kp DE_V &kp DE_G &kp DE_C &kp DE_L &kp DE_Z &kp BSPC
    &kp LCTRL &kp DE_H  &kp DE_A    &kp DE_E &kp DE_I     &kp DE_U &kp DE_D &kp DE_T &kp DE_R &kp DE_N &kp DE_S &kp DE_F
-   &tdshift &trans &kp DE_X    &kp DE_Q &kp DE_A_UMLAUT &kp DE_U_UMLAUT &kp DE_B &kp DE_P &kp DE_W &kp DE_M &kp DE_J &kp RSHFT 
+   &tdshift &kp DE_X    &kp DE_Q &kp DE_A_UMLAUT &kp DE_U_UMLAUT &kp DE_B &kp DE_P &kp DE_W &kp DE_M &kp DE_J &kp RSHFT 
              &kp LGUI &tdkoysym &kp DE_SPACE   &kp RET   &tdkoynum   &tdaltbt 
                         >;
                 };
