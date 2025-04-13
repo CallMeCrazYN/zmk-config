@@ -4,6 +4,28 @@
  * SPDX-License-Identifier: MIT
  */
 
+
+/*
+
+Notes/Todos
+
+y an falscher stelle auf koy base layer
+- untere leiste komplett um 1 verschoben glaube ich
+- einfach y entfernen
+
+koy sim nur auf einer seite zu haben ist etwas gewöhnungsbedürftig
+- iwie wäre eine extra reihe bei dem pcb schon nice
+- visualisierung auf welcher ebene ich bin wäre auch nice
+  - vllt doch kleines display/leds holen?
+
+ctrl und koysym tauschen auf der linken seite?
+- näher an laptop layout
+
+rechtes shift hat kein tapdance/sticky
+
+
+*/
+
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
@@ -122,19 +144,18 @@
                 koy_base_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  k  |  .  |  o  |  ,  |  y  |   |  v  |  g  |  c  |  l  |  ß das hier auf extra layer?  | z oder BSPC? |
-// | CTRL?|  h   |  a  |  e  |  i  |  u   |   |  d  |  t  |  r  |  n  |  s  |  f   |
-// | SHFT |  x  |  q   |  ä   |  ü   |   |  ö  |  b  |  p  |  w  | m |  j   |
+// | td koy sym|  h   |  a  |  e  |  i  |  u   |   |  d  |  t  |  r  |  n  |  s  |  f   |
+// | SHFT |  x  |  q   |  ä   |  ü  | ö |     |  b  |  p  |  w  | m |  j   |
 //  layer  somewhere
-//                    | GUI | LWR | SPC |   | ENT | RSE | ALT |
+//                    | GUI | CTRL | SPC |   | ENT | RSE | ALT |
 
                         bindings = <
    &kp  TAB  &kp DE_K  &kp DE_DOT  &kp DE_O &kp DE_COMMA &kp DE_Y &kp DE_V &kp DE_G &kp DE_C &kp DE_L &kp DE_Z &kp BSPC
-   &kp LCTRL &kp DE_H  &kp DE_A    &kp DE_E &kp DE_I     &kp DE_U &kp DE_D &kp DE_T &kp DE_R &kp DE_N &kp DE_S &kp DE_F
-   &tdshift &kp DE_X    &kp DE_Q &kp DE_A_UMLAUT &kp DE_U_UMLAUT &kp DE_B &kp DE_P &kp DE_W &kp DE_M &kp DE_J &kp RSHFT 
-             &kp LGUI &tdkoysym &kp DE_SPACE   &kp RET   &tdkoynum   &tdaltbt 
+   &tdkoysym &kp DE_H  &kp DE_A    &kp DE_E &kp DE_I     &kp DE_U &kp DE_D &kp DE_T &kp DE_R &kp DE_N &kp DE_S &kp DE_F
+   &tdshift &kp DE_X    &kp DE_Q &kp DE_A_UMLAUT &kp DE_U_UMLAUT &kp DE_O_UMLAUT &kp DE_B &kp DE_P &kp DE_W &kp DE_M &kp DE_J &tdshift
+             &kp LGUI &kp LCTRL &kp DE_SPACE   &kp RET   &tdkoynum   &tdaltbt 
                         >;
                 };
-
 
                 koy_first_symbol_layer {
 // -----------------------------------------------------------------------------------------
@@ -145,7 +166,7 @@
 
                         bindings = <
    &kp TAB   &trans &kp DE_UNDERSCORE &kp DE_LEFT_BRACKET &kp DE_RIGHT_BRACKET &kp DE_CARET &kp DE_EXCLAMATION &kp DE_LT  &kp DE_GT    &kp DE_EQUAL   &kp DE_AMPERSAND &trans  
-   &kp LCTRL &kp DE_BACKSLASH &kp DE_SLASH &kp DE_LEFT_BRACE &kp DE_RIGHT_BRACE &kp DE_ASTERISK &kp DE_QUESTION &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS &kp DE_MINUS &kp DE_COLON &kp DE_AT
+   &trans &kp DE_BACKSLASH &kp DE_SLASH &kp DE_LEFT_BRACE &kp DE_RIGHT_BRACE &kp DE_ASTERISK &kp DE_QUESTION &kp DE_LEFT_PARENTHESIS  &kp DE_RIGHT_PARENTHESIS &kp DE_MINUS &kp DE_COLON &kp DE_AT
    &tdshift &kp DE_HASH &kp DE_DOLLAR &kp DE_PIPE &kp DE_TILDE &kp DE_GRAVE &kp DE_PLUS &kp DE_PERCENT &kp DE_DOUBLE_QUOTES &kp DE_DOT &kp DE_SEMICOLON &kp ESC
                   &kp LGUI &trans &kp DE_SPACE   &kp RET &trans &trans
                         >;
@@ -161,9 +182,9 @@
 
                         bindings = <
    &kp  TAB  &kp PAGE_UP  &kp BSPC  &kp UP_ARROW  &kp DELETE &kp PAGE_DOWN  &trans &kp DE_N7 &kp DE_N8 &kp DE_N9 &kp DE_PLUS &kp DE_MINUS 
-   &kp LCTRL &kp HOME  &kp LEFT_ARROW &kp DOWN_ARROW &kp RIGHT_ARROW &kp END &trans &kp DE_N4 &kp DE_N5 &kp DE_N6 &kp DE_COMMA &kp DE_DOT 
-   &tdshift &kp ESC &kp TAB &trans &kp RET &trans &kp DE_COLON &kp DE_N1 &kp DE_N2 &kp DE_N3 &kp DE_SEMICOLON &kp RSHFT 
-             &kp LCTRL &trans  &kp DE_N0  &kp RET   &trans   &trans
+   &trans  &kp HOME  &kp LEFT_ARROW &kp DOWN_ARROW &kp RIGHT_ARROW &kp END &trans &kp DE_N4 &kp DE_N5 &kp DE_N6 &kp DE_COMMA &kp DE_DOT 
+   &tdshift &kp ESC &kp TAB &trans &kp RET &trans &kp DE_COLON &kp DE_N1 &kp DE_N2 &kp DE_N3 &kp DE_SEMICOLON &tdshift
+             &kp LGUI &trans  &kp DE_N0  &kp RET   &trans   &trans
                         >;
                 };
 
